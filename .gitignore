@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.astro/
+.wrangler/
+.env
+.DS_Store
+
+# De HTML-spiegel is bronmateriaal voor de migratie, geen sitecode.
+migration/mirror/
+migration/source/css/

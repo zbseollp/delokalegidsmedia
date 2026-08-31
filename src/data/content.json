@@ -1,0 +1,641 @@
+{
+ "icons": [
+  "/wp-content/uploads/2023/02/icon-park-solid_alarm.png",
+  "/wp-content/uploads/2023/02/icon-park-solid_certificate.png",
+  "/wp-content/uploads/2023/02/icon-park-solid_communication.png",
+  "/wp-content/uploads/2023/02/icon-park-solid_view-list.png"
+ ],
+ "heroImage": "/wp-content/uploads/2023/02/31761199_phone_14_pro_mockup_2-1.png",
+ "seoTitle": "DeLokaleGidsMedia | Alles uit de regio op één plaats",
+ "seoDescription": "",
+ "canonical": "https://delokalegidsmedia.nl/",
+ "ogImage": "/wp-content/uploads/2023/02/31761199_phone_14_pro_mockup_2-1.png",
+ "h1": "Lokaal nieuws uit eerste hand",
+ "intro": "DeLokaleGidsMedia.nl is een uitgever van lokale nieuwswebsites. Met uitsluitend redacties uit de regio bieden wij authentiek nieuws uit eerste hand. Want er is meer dan landelijk nieuws.",
+ "promises": [
+  "Wees altijd op de hoogte van het laatste nieuws en actuele bekendmakingen.",
+  "Op zoek naar een baan in je eigen regio? Onze online uitgaves helpen.",
+  "Een lokale redactie biedt het beste lokale nieuws. Daar staan wij voor.",
+  "Niet alleen nieuws, maar ook info over evenementen, bedrijven en meer."
+ ],
+ "sections": [
+  {
+   "title": "Onze regionale uitgaves",
+   "body": "DeLokaleGidsMedia.nl is actief met uitgaves in verschillende gemeenten. Bekijk hieronder een overzicht van onze lokale gidsen. Ons portfolio wordt regelmatig uitgebreid, om zo uitstekende dekking te bieden voor lokale informatie."
+  },
+  {
+   "title": "Complete portals voor elke plaats",
+   "body": "DeLokaleGidsMedia.nl biedt voor iedere woonplaats een portal aan die in alle behoeften voorziet. Bekijk nieuws, vacatures, te koop staande woningen, de evenementenagenda en nog veel meer. Inwoners hoeven niet langer verschillende websites te openen afhankelijk van de informatie die zij zoeken."
+  },
+  {
+   "title": "Contact met DeLokaleGidsMedia",
+   "body": "Heeft u een vraag, verzoek, opmerking of iets anders dat u graag met ons wilt bespreken? Vul het contactformulier hieronder in en we komen zo snel mogelijk bij u terug."
+  }
+ ],
+ "footerText": "DeLokaleGidsMedia.nl is uitgever van online lokale gidsen. Van het laatste nieuws tot vacatures die op dit moment openstaan: wij bieden één plek voor alles lokaal.",
+ "guides": [
+  {
+   "url": "http://deepegids.nl/",
+   "host": "deepegids.nl",
+   "slug": "epe",
+   "name": "Epe"
+  },
+  {
+   "url": "http://dewierdengids.nl/",
+   "host": "dewierdengids.nl",
+   "slug": "wierden",
+   "name": "Wierden"
+  },
+  {
+   "url": "https://deaaltengids.nl/",
+   "host": "deaaltengids.nl",
+   "slug": "aalten",
+   "name": "Aalten"
+  },
+  {
+   "url": "https://dealbergengids.nl/",
+   "host": "dealbergengids.nl",
+   "slug": "albergen",
+   "name": "Albergen"
+  },
+  {
+   "url": "https://dealkmaargids.nl/",
+   "host": "dealkmaargids.nl",
+   "slug": "alkmaar",
+   "name": "Alkmaar"
+  },
+  {
+   "url": "https://dealmelogids.nl/",
+   "host": "dealmelogids.nl",
+   "slug": "almelo",
+   "name": "Almelo"
+  },
+  {
+   "url": "https://deapeldoorngids.nl/",
+   "host": "deapeldoorngids.nl",
+   "slug": "apeldoorn",
+   "name": "Apeldoorn"
+  },
+  {
+   "url": "https://dearnhemgids.nl/",
+   "host": "dearnhemgids.nl",
+   "slug": "arnhem",
+   "name": "Arnhem"
+  },
+  {
+   "url": "https://debarneveldgids.nl/",
+   "host": "debarneveldgids.nl",
+   "slug": "barneveld",
+   "name": "Barneveld"
+  },
+  {
+   "url": "https://debergendalgids.nl/",
+   "host": "debergendalgids.nl",
+   "slug": "bergendal",
+   "name": "Bergendal"
+  },
+  {
+   "url": "https://deberkellandgids.nl/",
+   "host": "deberkellandgids.nl",
+   "slug": "berkelland",
+   "name": "Berkelland"
+  },
+  {
+   "url": "https://debeuningengids.nl/",
+   "host": "debeuningengids.nl",
+   "slug": "beuningen",
+   "name": "Beuningen"
+  },
+  {
+   "url": "https://deborculogids.nl/",
+   "host": "deborculogids.nl",
+   "slug": "borculo",
+   "name": "Borculo"
+  },
+  {
+   "url": "https://debornegids.nl/",
+   "host": "debornegids.nl",
+   "slug": "borne",
+   "name": "Borne"
+  },
+  {
+   "url": "https://debrummengids.nl/",
+   "host": "debrummengids.nl",
+   "slug": "brummen",
+   "name": "Brummen"
+  },
+  {
+   "url": "https://deculemborggids.nl/",
+   "host": "deculemborggids.nl",
+   "slug": "culemborg",
+   "name": "Culemborg"
+  },
+  {
+   "url": "https://dedalfsengids.nl/",
+   "host": "dedalfsengids.nl",
+   "slug": "dalfsen",
+   "name": "Dalfsen"
+  },
+  {
+   "url": "https://dededemsvaartgids.nl/",
+   "host": "dededemsvaartgids.nl",
+   "slug": "dedemsvaart",
+   "name": "Dedemsvaart"
+  },
+  {
+   "url": "https://dedeldengids.nl/",
+   "host": "dedeldengids.nl",
+   "slug": "delden",
+   "name": "Delden"
+  },
+  {
+   "url": "https://dedenekampgids.nl/",
+   "host": "dedenekampgids.nl",
+   "slug": "denekamp",
+   "name": "Denekamp"
+  },
+  {
+   "url": "https://dedenhamgids.nl/",
+   "host": "dedenhamgids.nl",
+   "slug": "denham",
+   "name": "Denham"
+  },
+  {
+   "url": "https://dedeventergids.nl/",
+   "host": "dedeventergids.nl",
+   "slug": "deventer",
+   "name": "Deventer"
+  },
+  {
+   "url": "https://dedidamgids.nl/",
+   "host": "dedidamgids.nl",
+   "slug": "didam",
+   "name": "Didam"
+  },
+  {
+   "url": "https://dedinkellandgids.nl/",
+   "host": "dedinkellandgids.nl",
+   "slug": "dinkelland",
+   "name": "Dinkelland"
+  },
+  {
+   "url": "https://dedinxperlogids.nl/",
+   "host": "dedinxperlogids.nl",
+   "slug": "dinxperlo",
+   "name": "Dinxperlo"
+  },
+  {
+   "url": "https://dedoesburggids.nl/",
+   "host": "dedoesburggids.nl",
+   "slug": "doesburg",
+   "name": "Doesburg"
+  },
+  {
+   "url": "https://dedoetinchemgids.nl/",
+   "host": "dedoetinchemgids.nl",
+   "slug": "doetinchem",
+   "name": "Doetinchem"
+  },
+  {
+   "url": "https://dedrutengids.nl/",
+   "host": "dedrutengids.nl",
+   "slug": "druten",
+   "name": "Druten"
+  },
+  {
+   "url": "https://deduivengids.nl/",
+   "host": "deduivengids.nl",
+   "slug": "duiven",
+   "name": "Duiven"
+  },
+  {
+   "url": "https://deedegids.nl/",
+   "host": "deedegids.nl",
+   "slug": "ede",
+   "name": "Ede"
+  },
+  {
+   "url": "https://deeerbeekgids.nl/",
+   "host": "deeerbeekgids.nl",
+   "slug": "eerbeek",
+   "name": "Eerbeek"
+  },
+  {
+   "url": "https://deelburggids.nl/",
+   "host": "deelburggids.nl",
+   "slug": "elburg",
+   "name": "Elburg"
+  },
+  {
+   "url": "https://deelspeetgids.nl/",
+   "host": "deelspeetgids.nl",
+   "slug": "elspeet",
+   "name": "Elspeet"
+  },
+  {
+   "url": "https://deelstgids.nl/",
+   "host": "deelstgids.nl",
+   "slug": "elst",
+   "name": "Elst"
+  },
+  {
+   "url": "https://deenschedegids.nl/",
+   "host": "deenschedegids.nl",
+   "slug": "enschede",
+   "name": "Enschede"
+  },
+  {
+   "url": "https://deentergids.nl/",
+   "host": "deentergids.nl",
+   "slug": "enter",
+   "name": "Enter"
+  },
+  {
+   "url": "https://deermelogids.nl/",
+   "host": "deermelogids.nl",
+   "slug": "ermelo",
+   "name": "Ermelo"
+  },
+  {
+   "url": "https://degeldermalsengids.nl/",
+   "host": "degeldermalsengids.nl",
+   "slug": "geldermalsen",
+   "name": "Geldermalsen"
+  },
+  {
+   "url": "https://degoorgids.nl/",
+   "host": "degoorgids.nl",
+   "slug": "goor",
+   "name": "Goor"
+  },
+  {
+   "url": "https://degorsselgids.nl/",
+   "host": "degorsselgids.nl",
+   "slug": "gorssel",
+   "name": "Gorssel"
+  },
+  {
+   "url": "https://dehaaksbergengids.nl/",
+   "host": "dehaaksbergengids.nl",
+   "slug": "haaksbergen",
+   "name": "Haaksbergen"
+  },
+  {
+   "url": "https://dehardenberggids.nl/",
+   "host": "dehardenberggids.nl",
+   "slug": "hardenberg",
+   "name": "Hardenberg"
+  },
+  {
+   "url": "https://dehedelgids.nl/",
+   "host": "dehedelgids.nl",
+   "slug": "hedel",
+   "name": "Hedel"
+  },
+  {
+   "url": "https://dehengelogids.nl/",
+   "host": "dehengelogids.nl",
+   "slug": "hengelo",
+   "name": "Hengelo"
+  },
+  {
+   "url": "https://deholtengids.nl/",
+   "host": "deholtengids.nl",
+   "slug": "holten",
+   "name": "Holten"
+  },
+  {
+   "url": "https://dekampengids.nl/",
+   "host": "dekampengids.nl",
+   "slug": "kampen",
+   "name": "Kampen"
+  },
+  {
+   "url": "https://dekootwijkerbroekgids.nl/",
+   "host": "dekootwijkerbroekgids.nl",
+   "slug": "kootwijkerbroek",
+   "name": "Kootwijkerbroek"
+  },
+  {
+   "url": "https://delingewaardgids.nl/",
+   "host": "delingewaardgids.nl",
+   "slug": "lingewaard",
+   "name": "Lingewaard"
+  },
+  {
+   "url": "https://delochemgids.nl/",
+   "host": "delochemgids.nl",
+   "slug": "lochem",
+   "name": "Lochem"
+  },
+  {
+   "url": "https://delokalegidsmedia.nl",
+   "host": "delokalegidsmedia.nl",
+   "slug": "lokalegidsmedia",
+   "name": "Lokalegidsmedia"
+  },
+  {
+   "url": "https://deloogids.nl/",
+   "host": "deloogids.nl",
+   "slug": "loo",
+   "name": "Loo"
+  },
+  {
+   "url": "https://delossergids.nl/",
+   "host": "delossergids.nl",
+   "slug": "losser",
+   "name": "Losser"
+  },
+  {
+   "url": "https://delunterengids.nl/",
+   "host": "delunterengids.nl",
+   "slug": "lunteren",
+   "name": "Lunteren"
+  },
+  {
+   "url": "https://demaasdrielgids.nl/",
+   "host": "demaasdrielgids.nl",
+   "slug": "maasdriel",
+   "name": "Maasdriel"
+  },
+  {
+   "url": "https://demaldengids.nl/",
+   "host": "demaldengids.nl",
+   "slug": "malden",
+   "name": "Malden"
+  },
+  {
+   "url": "https://demarkelogids.nl/",
+   "host": "demarkelogids.nl",
+   "slug": "markelo",
+   "name": "Markelo"
+  },
+  {
+   "url": "https://demillingenaanderijngids.nl/",
+   "host": "demillingenaanderijngids.nl",
+   "slug": "millingenaanderijn",
+   "name": "Millingenaanderijn"
+  },
+  {
+   "url": "https://denederbetuwegids.nl/",
+   "host": "denederbetuwegids.nl",
+   "slug": "nederbetuwe",
+   "name": "Nederbetuwe"
+  },
+  {
+   "url": "https://deneedegids.nl/",
+   "host": "deneedegids.nl",
+   "slug": "neede",
+   "name": "Neede"
+  },
+  {
+   "url": "https://denieuwleusengids.nl/",
+   "host": "denieuwleusengids.nl",
+   "slug": "nieuwleusen",
+   "name": "Nieuwleusen"
+  },
+  {
+   "url": "https://denijkerkerveengids.nl/",
+   "host": "denijkerkerveengids.nl",
+   "slug": "nijkerkerveen",
+   "name": "Nijkerkerveen"
+  },
+  {
+   "url": "https://denijkerkgids.nl/",
+   "host": "denijkerkgids.nl",
+   "slug": "nijkerk",
+   "name": "Nijkerk"
+  },
+  {
+   "url": "https://denijmegengids.nl/",
+   "host": "denijmegengids.nl",
+   "slug": "nijmegen",
+   "name": "Nijmegen"
+  },
+  {
+   "url": "https://denijverdalgids.nl/",
+   "host": "denijverdalgids.nl",
+   "slug": "nijverdal",
+   "name": "Nijverdal"
+  },
+  {
+   "url": "https://deoldebroekgids.nl/",
+   "host": "deoldebroekgids.nl",
+   "slug": "oldebroek",
+   "name": "Oldebroek"
+  },
+  {
+   "url": "https://deolstgids.nl/",
+   "host": "deolstgids.nl",
+   "slug": "olst",
+   "name": "Olst"
+  },
+  {
+   "url": "https://deoosterbeekgids.nl/",
+   "host": "deoosterbeekgids.nl",
+   "slug": "oosterbeek",
+   "name": "Oosterbeek"
+  },
+  {
+   "url": "https://deoostgelregids.nl/",
+   "host": "deoostgelregids.nl",
+   "slug": "oostgelre",
+   "name": "Oostgelre"
+  },
+  {
+   "url": "https://deoverbetuwegids.nl/",
+   "host": "deoverbetuwegids.nl",
+   "slug": "overbetuwe",
+   "name": "Overbetuwe"
+  },
+  {
+   "url": "https://deputtengids.nl/",
+   "host": "deputtengids.nl",
+   "slug": "putten",
+   "name": "Putten"
+  },
+  {
+   "url": "https://deraaltegids.nl/",
+   "host": "deraaltegids.nl",
+   "slug": "raalte",
+   "name": "Raalte"
+  },
+  {
+   "url": "https://derenkumgids.nl/",
+   "host": "derenkumgids.nl",
+   "slug": "renkum",
+   "name": "Renkum"
+  },
+  {
+   "url": "https://derhedengids.nl/",
+   "host": "derhedengids.nl",
+   "slug": "rheden",
+   "name": "Rheden"
+  },
+  {
+   "url": "https://derijssengids.nl/",
+   "host": "derijssengids.nl",
+   "slug": "rijssen",
+   "name": "Rijssen"
+  },
+  {
+   "url": "https://descherpenzeelgids.nl/",
+   "host": "descherpenzeelgids.nl",
+   "slug": "scherpenzeel",
+   "name": "Scherpenzeel"
+  },
+  {
+   "url": "https://destaphorstgids.nl/",
+   "host": "destaphorstgids.nl",
+   "slug": "staphorst",
+   "name": "Staphorst"
+  },
+  {
+   "url": "https://desteenwijkgids.nl/",
+   "host": "desteenwijkgids.nl",
+   "slug": "steenwijk",
+   "name": "Steenwijk"
+  },
+  {
+   "url": "https://detielgids.nl/",
+   "host": "detielgids.nl",
+   "slug": "tiel",
+   "name": "Tiel"
+  },
+  {
+   "url": "https://detubbergengids.nl/",
+   "host": "detubbergengids.nl",
+   "slug": "tubbergen",
+   "name": "Tubbergen"
+  },
+  {
+   "url": "https://detwellogids.nl/",
+   "host": "detwellogids.nl",
+   "slug": "twello",
+   "name": "Twello"
+  },
+  {
+   "url": "https://detwenterandgids.nl/",
+   "host": "detwenterandgids.nl",
+   "slug": "twenterand",
+   "name": "Twenterand"
+  },
+  {
+   "url": "https://deulftgids.nl/",
+   "host": "deulftgids.nl",
+   "slug": "ulft",
+   "name": "Ulft"
+  },
+  {
+   "url": "https://devaassengids.nl/",
+   "host": "devaassengids.nl",
+   "slug": "vaassen",
+   "name": "Vaassen"
+  },
+  {
+   "url": "https://devoorstgids.nl/",
+   "host": "devoorstgids.nl",
+   "slug": "voorst",
+   "name": "Voorst"
+  },
+  {
+   "url": "https://devordengids.nl/",
+   "host": "devordengids.nl",
+   "slug": "vorden",
+   "name": "Vorden"
+  },
+  {
+   "url": "https://devriezeveengids.nl/",
+   "host": "devriezeveengids.nl",
+   "slug": "vriezeveen",
+   "name": "Vriezeveen"
+  },
+  {
+   "url": "https://dewageningengids.nl/",
+   "host": "dewageningengids.nl",
+   "slug": "wageningen",
+   "name": "Wageningen"
+  },
+  {
+   "url": "https://dewehlgids.nl/",
+   "host": "dewehlgids.nl",
+   "slug": "wehl",
+   "name": "Wehl"
+  },
+  {
+   "url": "https://dewestbetuwegids.nl/",
+   "host": "dewestbetuwegids.nl",
+   "slug": "westbetuwe",
+   "name": "Westbetuwe"
+  },
+  {
+   "url": "https://dewestervoortgids.nl/",
+   "host": "dewestervoortgids.nl",
+   "slug": "westervoort",
+   "name": "Westervoort"
+  },
+  {
+   "url": "https://dewijchengids.nl/",
+   "host": "dewijchengids.nl",
+   "slug": "wijchen",
+   "name": "Wijchen"
+  },
+  {
+   "url": "https://dewinterswijkgids.nl/",
+   "host": "dewinterswijkgids.nl",
+   "slug": "winterswijk",
+   "name": "Winterswijk"
+  },
+  {
+   "url": "https://dezaltbommelgids.nl/",
+   "host": "dezaltbommelgids.nl",
+   "slug": "zaltbommel",
+   "name": "Zaltbommel"
+  },
+  {
+   "url": "https://dezelhemgids.nl/",
+   "host": "dezelhemgids.nl",
+   "slug": "zelhem",
+   "name": "Zelhem"
+  },
+  {
+   "url": "https://dezevenaargids.nl/",
+   "host": "dezevenaargids.nl",
+   "slug": "zevenaar",
+   "name": "Zevenaar"
+  },
+  {
+   "url": "https://dezutphengids.nl/",
+   "host": "dezutphengids.nl",
+   "slug": "zutphen",
+   "name": "Zutphen"
+  },
+  {
+   "url": "https://dezwartsluisgids.nl/",
+   "host": "dezwartsluisgids.nl",
+   "slug": "zwartsluis",
+   "name": "Zwartsluis"
+  },
+  {
+   "url": "https://dezwollegids.nl/",
+   "host": "dezwollegids.nl",
+   "slug": "zwolle",
+   "name": "Zwolle"
+  }
+ ],
+ "images": [
+  "/wp-content/uploads/2023/02/31761199_phone_14_pro_mockup_2-1-262x300.png",
+  "/wp-content/uploads/2023/02/31761199_phone_14_pro_mockup_2-1.png",
+  "/wp-content/uploads/2023/02/9326058_365-1-291x300.png",
+  "/wp-content/uploads/2023/02/9326058_365-1.png",
+  "/wp-content/uploads/2023/02/Frame-280x300.png",
+  "/wp-content/uploads/2023/02/Frame-704.svg",
+  "/wp-content/uploads/2023/02/Frame-705.svg",
+  "/wp-content/uploads/2023/02/Frame.png",
+  "/wp-content/uploads/2023/02/Frame.svg",
+  "/wp-content/uploads/2023/02/icon-park-solid_alarm.png",
+  "/wp-content/uploads/2023/02/icon-park-solid_certificate.png",
+  "/wp-content/uploads/2023/02/icon-park-solid_communication.png",
+  "/wp-content/uploads/2023/02/icon-park-solid_view-list.png"
+ ]
+}

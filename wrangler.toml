@@ -1,0 +1,16 @@
+# Deze worker draait in het Cloudflare-account van info@zbseo.uk
+# (muddy-heart-fc18). Het account-id staat er expliciet in zodat een deploy
+# niet in het andere account belandt.
+name = "delokalegidsmedia"
+main = "worker/index.js"
+account_id = "54b144d6836138e432688b9d5f4ec8aa"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+workers_dev = true
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+html_handling = "force-trailing-slash"
+not_found_handling = "404-page"
+run_worker_first = ["/sitemap*.xml", "/sitemap.xml", "/sitemap_index.xml"]

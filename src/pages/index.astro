@@ -1,0 +1,136 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import content from "../data/content.json";
+import { site, contact } from "../data/site";
+
+const { h1, intro, promises, sections, guides, footerText, icons, heroImage,
+        seoTitle, seoDescription, canonical, ogImage } = content;
+const [uitgaves, portals, contactSection] = sections;
+const hasForm = Boolean(contact.web3formsKey);
+---
+<BaseLayout
+  title={seoTitle || site.name}
+  description={seoDescription || site.description}
+  canonical={canonical || site.domain + "/"}
+  image={ogImage}
+>
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div class="hero__inner">
+        <h1>{h1}</h1>
+        <p>{intro}</p>
+        <div class="hero__actions">
+          <a class="button" href="#uitgaves">Bekijk onze {guides.length} uitgaves</a>
+          <a class="button button--ghost" href="#contact">Contact met ons</a>
+        </div>
+      </div>
+      {heroImage && (
+        <img class="hero__image" src={heroImage} alt="" width="420" height="480" fetchpriority="high" />
+      )}
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <div class="promises">
+      {promises.map((p: string, i: number) => (
+        <div class="promise">
+          {icons[i] && <img class="promise__icon" src={icons[i]} alt="" width="34" height="34" loading="lazy" />}
+          <p>{p}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="section section--alt" id="uitgaves">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>{uitgaves.title}</h2>
+        <p>{uitgaves.body}</p>
+      </div>
+      <div class="guides">
+        {guides.map((g: { url: string; host: string; name: string }) => (
+          <a class="guide" href={g.url} rel="noopener">
+            <span>
+              {g.name}
+              <br /><span class="guide__host">{g.host}</span>
+            </span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <div class="section__head">
+      <h2>{portals.title}</h2>
+      <p>{portals.body}</p>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="contact">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>{contactSection.title}</h2>
+        <p>{contactSection.body}</p>
+      </div>
+
+      {hasForm ? (
+        <form class="contact-form" id="contactform" novalidate>
+          <input type="hidden" name="access_key" value={contact.web3formsKey} />
+          <input type="hidden" name="subject" value={`Bericht via ${site.name}`} />
+          <input type="hidden" name="from_name" value={site.name} />
+          <div class="contact-form__hp" aria-hidden="true">
+            <label>Laat dit veld leeg als je een mens bent
+              <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" /></label>
+          </div>
+          <p class="field">
+            <label for="cf-naam">Naam</label>
+            <input id="cf-naam" name="Naam" type="text" autocomplete="name" required maxlength="120" />
+          </p>
+          <p class="field">
+            <label for="cf-email">E-mailadres</label>
+            <input id="cf-email" name="email" type="email" autocomplete="email" required maxlength="180" />
+          </p>
+          <p class="field">
+            <label for="cf-bericht">Bericht</label>
+            <textarea id="cf-bericht" name="Bericht" rows="6" required maxlength="4000"></textarea>
+          </p>
+          <p><button class="button" type="submit">Versturen</button></p>
+          <p class="contact-form__status" role="status" aria-live="polite"></p>
+        </form>
+      ) : (
+        <p class="notice">
+          Het contactformulier is nog niet gekoppeld. Zet een Web3Forms access key
+          in <code>src/data/site.ts</code> en het formulier verstuurt weer echt.
+        </p>
+      )}
+    </div>
+  </section>
+
+  <p slot="footer">{footerText}</p>
+
+  {hasForm && (
+    <script>
+      const form = document.getElementById("contactform");
+      const status = form?.querySelector(".contact-form__status");
+      form?.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        if (!form.reportValidity()) return;
+        status.textContent = "Versturen…";
+        try {
+          const res = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: { Accept: "application/json" },
+            body: new FormData(form),
+          });
+          status.textContent = res.ok
+            ? "Bedankt, je bericht is verstuurd."
+            : "Verzenden lukte niet. Probeer het later nog eens.";
+          if (res.ok) form.reset();
+        } catch {
+          status.textContent = "Verzenden lukte niet. Probeer het later nog eens.";
+        }
+      });
+    </script>
+  )}
+</BaseLayout>

@@ -1,0 +1,189 @@
+/* DeLokaleGidsMedia — de huisstijl van de oude site: Montserrat, zwart als
+   basis, rood #FF0000 en amber #FFB700 als accenten. Het rood is iets
+   ingetogener gezet zodat het als accent werkt en niet als vlak. */
+:root {
+  --red: #e01b1b;
+  --red-dark: #b31313;
+  --amber: #ffb700;
+  --amber-soft: #fff6e0;
+  --ink: #101010;
+  --ink-soft: #694747;
+  --ink-muted: #8a7676;
+  --paper: #ffffff;
+  --surface-alt: #faf7f5;
+  --line: #e8e0dc;
+  --line-strong: #d2c6c0;
+  --wrap: 1160px;
+  --radius: 12px;
+  --shadow: 0 1px 2px rgba(16, 16, 16, 0.04), 0 12px 30px -16px rgba(16, 16, 16, 0.2);
+  --font: "Montserrat", "Segoe UI", system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink-soft);
+  font-family: var(--font);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  color: var(--ink);
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.022em;
+  margin: 0 0 0.5em;
+  text-wrap: balance;
+}
+h1 { font-size: clamp(2.1rem, 1.5rem + 2.6vw, 3.2rem); }
+h2 { font-size: clamp(1.5rem, 1.25rem + 1.2vw, 2.1rem); }
+h3 { font-size: 1.15rem; }
+
+a { color: var(--red); text-decoration: none; }
+a:hover { color: var(--red-dark); text-decoration: underline; text-underline-offset: 0.18em; }
+img { max-width: 100%; height: auto; display: block; }
+:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; border-radius: 3px; }
+
+.wrap { width: min(100% - 2.5rem, var(--wrap)); margin-inline: auto; }
+.section { padding: clamp(2.5rem, 5vw, 4.25rem) 0; }
+.section--alt { background: var(--surface-alt); border-block: 1px solid var(--line); }
+
+.skip-link {
+  position: absolute; left: -9999px; top: 0; z-index: 100;
+  background: var(--ink); color: #fff; padding: 0.75rem 1.1rem;
+}
+.skip-link:focus { left: 0; }
+
+/* ---------- header ---------- */
+.site-header {
+  position: sticky; top: 0; z-index: 60;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: saturate(1.6) blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+.site-header__inner {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1.5rem; padding: 0.85rem 0;
+}
+.brand { font-weight: 700; font-size: 1.2rem; color: var(--ink); letter-spacing: -0.03em; }
+.brand:hover { text-decoration: none; color: var(--ink); }
+.brand span { color: var(--red); }
+
+.site-nav ul {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem;
+  list-style: none; margin: 0; padding: 0;
+}
+.site-nav a {
+  display: block; padding: 0.4rem 0.8rem; border-radius: 999px;
+  color: var(--ink-soft); font-size: 0.9375rem; font-weight: 600;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.site-nav a:hover { background: var(--surface-alt); color: var(--ink); text-decoration: none; }
+
+/* ---------- hero ---------- */
+.hero {
+  padding: clamp(3rem, 6vw, 5rem) 0 clamp(2.25rem, 4vw, 3.25rem);
+  background:
+    radial-gradient(100% 130% at 8% 0%, var(--amber-soft) 0%, transparent 60%),
+    var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+.hero__inner { max-width: 46rem; }
+.hero p { font-size: clamp(1.0625rem, 1rem + 0.4vw, 1.1875rem); margin: 0 0 1.6rem; }
+.hero__actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+.button {
+  display: inline-block; background: var(--red); color: #fff;
+  padding: 0.7rem 1.4rem; border-radius: 999px;
+  font-size: 0.9375rem; font-weight: 600;
+  transition: background-color 0.15s ease;
+}
+.button:hover { background: var(--red-dark); color: #fff; text-decoration: none; }
+.button--ghost { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px var(--line-strong); }
+.button--ghost:hover { background: var(--amber-soft); color: var(--ink); }
+
+/* ---------- beloftes ---------- */
+.promises { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+.promise {
+  border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 1.35rem 1.4rem; background: var(--paper);
+  border-top: 3px solid var(--amber);
+}
+.promise p { margin: 0; font-size: 0.9375rem; }
+
+.section__head { max-width: 44rem; margin-bottom: clamp(1.5rem, 3vw, 2.25rem); }
+.section__head h2 { margin-bottom: 0.4em; }
+.section__head p { margin: 0; }
+
+/* ---------- gidsen ---------- */
+.guides {
+  display: grid; gap: 0.6rem;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+}
+.guide {
+  display: flex; align-items: center; gap: 0.55rem;
+  border: 1px solid var(--line); border-radius: 8px;
+  padding: 0.6rem 0.85rem; background: var(--paper);
+  color: var(--ink); font-size: 0.9375rem; font-weight: 600;
+  transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+.guide::before {
+  content: ""; flex: none; width: 6px; height: 6px;
+  border-radius: 50%; background: var(--amber);
+}
+.guide:hover {
+  text-decoration: none; color: var(--red-dark);
+  border-color: var(--red); transform: translateY(-1px); box-shadow: var(--shadow);
+}
+.guide__host { color: var(--ink-muted); font-size: 0.8125rem; font-weight: 500; }
+
+/* ---------- contact ---------- */
+.contact-form { display: grid; gap: 0; max-width: 34rem; }
+.contact-form .field { display: grid; gap: 0.35rem; margin: 0 0 1rem; }
+.contact-form label { font-size: 0.9375rem; font-weight: 600; color: var(--ink); }
+.contact-form input, .contact-form textarea {
+  font: inherit; padding: 0.65rem 0.8rem;
+  border: 1px solid var(--line-strong); border-radius: 8px; background: #fff;
+}
+.contact-form input:focus-visible, .contact-form textarea:focus-visible {
+  outline: 2px solid var(--red); outline-offset: 1px;
+}
+.contact-form button { border: 0; cursor: pointer; font: inherit; }
+.contact-form__hp { position: absolute; left: -9999px; }
+.contact-form__status:empty { display: none; }
+.notice {
+  border: 1px solid var(--line-strong); border-left: 3px solid var(--amber);
+  border-radius: 8px; padding: 0.9rem 1.1rem; background: var(--amber-soft);
+  font-size: 0.9375rem; max-width: 34rem;
+}
+
+/* ---------- footer ---------- */
+.site-footer { background: var(--ink); color: rgba(255, 255, 255, 0.74); margin-top: 0; }
+.site-footer a { color: rgba(255, 255, 255, 0.9); }
+.site-footer a:hover { color: #fff; }
+.site-footer__inner { padding: clamp(2.25rem, 4vw, 3rem) 0 1.5rem; display: grid; gap: 1rem; max-width: 46rem; }
+.site-footer h2 { color: #fff; font-size: 1.2rem; margin: 0; }
+.site-footer p { margin: 0; font-size: 0.9375rem; }
+.site-footer__legal {
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  padding: 1.1rem 0 1.75rem; font-size: 0.875rem; color: rgba(255, 255, 255, 0.55);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+
+/* Hero met de telefoon-mockup ernaast, zoals op de oude site. */
+.hero__grid { display: grid; gap: clamp(1.5rem, 4vw, 3rem); align-items: center; }
+@media (min-width: 900px) { .hero__grid { grid-template-columns: 1.25fr 0.75fr; } }
+.hero__image { width: 100%; max-width: 360px; margin-inline: auto; height: auto; }
+@media (max-width: 899px) { .hero__image { max-width: 260px; } }
+
+/* De vier beloftes hadden elk een eigen icoon. */
+.promise__icon { width: 34px; height: 34px; margin-bottom: 0.7rem; }

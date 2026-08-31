@@ -1,0 +1,13 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { site } from "../data/site";
+---
+<BaseLayout title={"Pagina niet gevonden - " + site.name} noindex>
+  <section class="hero">
+    <div class="wrap hero__inner">
+      <h1>Pagina niet gevonden</h1>
+      <p>Deze pagina bestaat niet. Ga terug naar de <a href="/">homepage</a>
+         of bekijk <a href="/#uitgaves">onze uitgaves</a>.</p>
+    </div>
+  </section>
+</BaseLayout>
