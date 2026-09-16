@@ -1,0 +1,52 @@
+---
+import { render } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { site } from "../data/site";
+import { publishedPosts, postSlug, postImage, datumNL, type Post } from "../lib/posts";
+
+export async function getStaticPaths() {
+  const posts = await publishedPosts();
+  return posts.map((post) => ({ params: { slug: postSlug(post) }, props: { post } }));
+}
+
+interface Props {
+  post: Post;
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const afbeelding = postImage(post);
+---
+
+<BaseLayout
+  title={`${post.data.title} | ${site.name}`}
+  description={post.data.description}
+  image={afbeelding}
+>
+  <article class="section wrap article">
+    <header class="article__head">
+      <h1>{post.data.title}</h1>
+      <p class="article__meta">
+        {post.data.pubDate && (
+          <time datetime={post.data.pubDate.toISOString()}>{datumNL(post.data.pubDate)}</time>
+        )}
+        {post.data.author && <span>{post.data.author}</span>}
+      </p>
+    </header>
+
+    {afbeelding && (
+      <img
+        class="article__image"
+        src={afbeelding}
+        alt={post.data.featuredImageAlt ?? ""}
+        loading="lazy"
+      />
+    )}
+
+    <div class="article__body">
+      <Content />
+    </div>
+
+    <p><a class="button button--ghost" href="/blog/">Terug naar het nieuwsoverzicht</a></p>
+  </article>
+</BaseLayout>

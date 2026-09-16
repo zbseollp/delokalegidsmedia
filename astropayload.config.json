@@ -1,0 +1,14 @@
+{
+  "$schema": "https://astropayload.dev/schemas/config.json",
+  "version": 1,
+  "tenantSlug": "delokalegidsmedia",
+  "modules": ["blog"],
+  "enabledModules": ["blog"],
+  "blogContentPath": "src/content/blog",
+  "blogFileExtension": "md",
+  "blogImageFields": {
+    "heroImage": "heroImage",
+    "featuredImage": "featuredImage"
+  },
+  "notes": "Artikelen komen bij elke deploy uit Payload in src/content/blog. Ze verschijnen op /<slug>/ met een overzicht op /blog/; src/content.config.ts accepteert ontbrekende of als object geleverde velden."
+}

@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { site } from "../../data/site";
+import { publishedPosts, postUrl, postImage, datumNL } from "../../lib/posts";
+
+const posts = await publishedPosts();
+const titel = `Nieuws van ${site.name}`;
+const omschrijving =
+  "Berichten en aankondigingen van DeLokaleGidsMedia over onze lokale nieuwswebsites.";
+---
+
+<BaseLayout title={`${titel} | ${site.name}`} description={omschrijving}>
+  <section class="section wrap">
+    <div class="section__head">
+      <h1>{titel}</h1>
+      <p>{omschrijving}</p>
+    </div>
+
+    {
+      posts.length === 0 ? (
+        <p class="notice">Er zijn op dit moment nog geen berichten.</p>
+      ) : (
+        <div class="posts">
+          {posts.map((post) => {
+            const afbeelding = postImage(post);
+            return (
+              <article class="post-card">
+                {afbeelding && (
+                  <a class="post-card__media" href={postUrl(post)}>
+                    <img src={afbeelding} alt={post.data.featuredImageAlt ?? ""} loading="lazy" />
+                  </a>
+                )}
+                <div class="post-card__body">
+                  <h2><a href={postUrl(post)}>{post.data.title}</a></h2>
+                  {post.data.pubDate && (
+                    <p class="post-card__meta">
+                      <time datetime={post.data.pubDate.toISOString()}>
+                        {datumNL(post.data.pubDate)}
+                      </time>
+                    </p>
+                  )}
+                  {post.data.description && <p>{post.data.description}</p>}
+                  <a class="button button--ghost" href={postUrl(post)}>Lees verder</a>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      )
+    }
+  </section>
+</BaseLayout>

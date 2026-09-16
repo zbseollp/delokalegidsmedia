@@ -187,3 +187,38 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* De vier beloftes hadden elk een eigen icoon. */
 .promise__icon { width: 34px; height: 34px; margin-bottom: 0.7rem; }
+
+/* ---------- nieuws ---------- */
+.posts { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); }
+.post-card {
+  display: flex; flex-direction: column;
+  border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--paper); overflow: hidden;
+  transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+.post-card:hover { border-color: var(--red); transform: translateY(-1px); box-shadow: var(--shadow); }
+.post-card__media { display: block; aspect-ratio: 16 / 9; background: var(--surface-alt); }
+.post-card__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.post-card__body { display: flex; flex-direction: column; gap: 0.5rem; padding: 1rem 1.1rem 1.2rem; }
+.post-card__body h2 { font-size: 1.125rem; margin: 0; }
+.post-card__body h2 a { color: var(--ink); }
+.post-card__body h2 a:hover { color: var(--red-dark); }
+.post-card__body p { margin: 0; font-size: 0.9375rem; }
+.post-card__meta { color: var(--ink-muted); font-size: 0.8125rem; }
+.post-card .button { align-self: flex-start; margin-top: 0.35rem; }
+
+.article { max-width: 46rem; }
+.article__head h1 { margin-bottom: 0.4rem; }
+.article__meta { display: flex; flex-wrap: wrap; gap: 0.75rem; color: var(--ink-muted); font-size: 0.875rem; }
+.article__image { width: 100%; height: auto; border-radius: var(--radius); margin: 0 0 1.5rem; }
+.article__body > :first-child { margin-top: 0; }
+.article__body h2 { margin: 2rem 0 0.6rem; font-size: 1.375rem; }
+.article__body h3 { margin: 1.5rem 0 0.5rem; font-size: 1.125rem; }
+.article__body img { max-width: 100%; height: auto; border-radius: var(--radius); }
+.article__body ul, .article__body ol { padding-left: 1.2rem; }
+.article__body blockquote {
+  margin: 1.5rem 0; padding: 0.2rem 0 0.2rem 1rem;
+  border-left: 3px solid var(--amber); color: var(--ink); font-style: italic;
+}
+.article__body table { width: 100%; border-collapse: collapse; }
+.article__body td, .article__body th { border: 1px solid var(--line); padding: 0.5rem 0.65rem; text-align: left; }
